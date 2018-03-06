@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:text="Switch Name"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/txtsname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="switch name"
+            android:paddingLeft="40dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:text="Command "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/txtcmd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:hint="type here  your command"
+            android:paddingLeft="40dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:text="Icon"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView4d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40dp"
+            android:text="choose your icon in bellow" />
+
+        <TextView
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40dp"
+            android:text="----" />
+
+        <ImageView
+            android:id="@+id/imageV"
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#f22929" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="238dp"
+            android:layout_weight="0.30"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp">
+
+            <ImageView
+
+                android:id="@+id/btnon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/btnon" />
+
+            <ImageView
+
+                android:id="@+id/btnoff"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_above="@+id/btnfan"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/btnoff" />
+
+            <ImageView
+                android:id="@+id/btnhome1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignLeft="@+id/btnon"
+                android:layout_alignStart="@+id/btnon"
+                android:layout_below="@+id/btnon"
+                android:background="@drawable/btnhome" />
+
+            <ImageView
+                android:id="@+id/btnfan"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_above="@+id/btnlight"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/btnfan" />
+
+            <ImageView
+                android:id="@+id/btnroom"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignLeft="@+id/btnhome1"
+                android:layout_alignStart="@+id/btnhome1"
+                android:layout_below="@+id/btnhome1"
+                android:background="@drawable/btnroom" />
+
+            <ImageView
+                android:id="@+id/btnlight"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignLeft="@+id/btnfan"
+                android:layout_alignStart="@+id/btnfan"
+                android:layout_below="@+id/btnhome1"
+                android:background="@drawable/btnlight" />
+
+            <ImageView
+                android:id="@+id/btnoutdoor"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignLeft="@+id/btnroom"
+                android:layout_alignStart="@+id/btnroom"
+                android:layout_below="@+id/btnroom"
+                android:background="@drawable/btnoutdoor" />
+
+            <ImageView
+                android:id="@+id/btncontrol"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_alignLeft="@+id/btnlight"
+                android:layout_alignStart="@+id/btnlight"
+                android:layout_below="@+id/btnlight"
+                android:background="@drawable/btncontrol" />
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="500dp"
+            android:layout_height="5dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#f40d0d" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp">
+
+            <ImageView
+                android:id="@+id/btnadd"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/btnview"
+                android:layout_toRightOf="@+id/btnview"
+                android:background="@android:drawable/ic_input_add" />
+
+            <ImageView
+
+                android:id="@+id/btndelete"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@android:drawable/ic_delete" />
+
+            <ImageView
+                android:id="@+id/btnedit"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/btndelete"
+                android:layout_toStartOf="@+id/btndelete"
+                android:background="@android:drawable/ic_menu_edit" />
+
+            <ImageView
+                android:id="@+id/btnview"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@android:drawable/presence_online" />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/imageView100"
+            android:layout_width="500dp"
+            android:layout_height="5dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#f40d0d" />
+
+
+    </LinearLayout>
+</ScrollView>

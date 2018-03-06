@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="IP Address:" />
+
+        <EditText
+            android:id="@+id/editTextIPAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="e.g. 192.168.0.10" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Port Number:" />
+
+        <EditText
+            android:id="@+id/editTextPortNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="e.g. 80"
+            android:inputType="number" />
+
+
+        <Button
+            android:id="@+id/btnsaveip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save IP and Port" />
+
+        <Button
+            android:id="@+id/btnsavewifi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Wifi Mode As Default " />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="SSID:" />
+
+        <EditText
+            android:id="@+id/editSSID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="e.g myssid" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password:" />
+
+        <EditText
+            android:id="@+id/editPW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="e.g.  my password"
+            android:inputType="text"
+            android:password="true" />
+
+        <Button
+            android:id="@+id/btnhostpot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:enabled="false"
+            android:text="Create Hostpot" />
+
+
+    </LinearLayout>
+
+</ScrollView>

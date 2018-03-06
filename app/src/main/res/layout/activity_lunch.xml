@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#1356f2"
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="30dp"
+
+    tools:context="com.rts.dcmote.dcmote.Lunch">
+
+    <ImageView
+        android:id="@+id/btnconect"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/dc" />
+
+    <ImageView
+        android:id="@+id/btnsetup"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/btnconect"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/st" />
+
+    <ImageView
+        android:id="@+id/btnabout"
+        android:layout_width="500dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/mic" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnconect"
+        android:layout_centerHorizontal="true"
+        android:text="Home"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#fbf5f5"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnsetup"
+        android:layout_centerHorizontal="true"
+        android:text="Setup"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#fbf5f5"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/speech_output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnabout"
+        android:layout_centerHorizontal="true"
+        android:text="Click Mic Button To Speak"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#fcfafa" />
+
+
+</RelativeLayout>
